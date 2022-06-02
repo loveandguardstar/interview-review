@@ -16,7 +16,7 @@ const MyPromise = function(fn) {
 
   const reject = (error) => {
     if (this.status === PENDING) {
-      this.status = FULLFILLED
+      this.status = REJECTED
       this.reason = error
     }
   }
